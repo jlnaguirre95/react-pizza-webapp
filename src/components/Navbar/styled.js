@@ -6,7 +6,7 @@ import { FaPizzaSlice } from "react-icons/fa";
 
 export const Nav = styled.nav`
     height: 100px;
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
     background-color: transparent;
     font-weight: 700;
     display: flex;
@@ -14,8 +14,18 @@ export const Nav = styled.nav`
     justify-content: space-between;
 `;
 
-export const NavLink = styled(Link)`
-    color: #fff;
+export const Logo = styled.div`
+    min-width: 100px;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        transition: 400ms ease-out;
+
+        &:hover {
+            transform: scale(1.2)
+        }
+    }
 `;
 
 export const NavItem = styled.div`

@@ -1,22 +1,24 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 import logo from '../../assets/SVG/logo-white.svg';
 
 import {
     Nav,
-    NavLink,
+    Logo,
     NavItem,
     NavIcon
 } from './styled';
 
 const Navbar = () => {
+    const history = useHistory()
     return (
         <Nav>
-            <NavLink to="/">
-                <img src={logo} alt="Hot Pizza Delivery" width="100px" />   
-            </NavLink>
+            <Logo onClick={() => history.push('/')}>
+                <img src={logo} alt="Hot Pizza Delivery" />   
+            </Logo>
             <NavItem>
-                <span className="nav-item">Menu</span>
+                <span>Menu</span>
                 <NavIcon />
             </NavItem>
         </Nav>
