@@ -30,6 +30,7 @@ export const Logo = styled.div`
 
 export const NavItem = styled.div`
     font-size: 2rem;
+    cursor: pointer;
 
     span {
         margin-right: 0.5rem;
@@ -38,5 +39,4 @@ export const NavItem = styled.div`
 
 export const NavIcon = styled(FaPizzaSlice)`
     font-size: 2rem;
-    /* transform: translate(-50%, -15%); */
 `;

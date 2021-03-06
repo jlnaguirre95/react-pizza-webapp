@@ -10,14 +10,15 @@ import {
     NavIcon
 } from './styled';
 
-const Navbar = () => {
-    const history = useHistory()
+const Navbar = ({ showMenu }) => {
+    const history = useHistory();
+
     return (
         <Nav>
             <Logo onClick={() => history.push('/')}>
                 <img src={logo} alt="Hot Pizza Delivery" />   
             </Logo>
-            <NavItem>
+            <NavItem onClick={showMenu}>
                 <span>Menu</span>
                 <NavIcon />
             </NavItem>

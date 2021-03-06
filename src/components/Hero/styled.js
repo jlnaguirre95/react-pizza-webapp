@@ -14,24 +14,24 @@ export const HeroContainer = styled.div`
 `;
 
 export const HeroContent = styled.div`
+    width: 100vw;
     height: calc(100vh - 100px);
     max-height: 100%;
-    width: 100vw;
     padding: 0 calc((100vw - 1300px) / 2);
 `;
 
 export const HeroItems = styled.div`
+    width: 650px;
+    height: 100vh;
+    max-height: 100%;
+    padding: 0 2.5rem;
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh;
-    max-height: 100%;
-    padding: 0 2.5rem;
-    width: 650px;
-    text-transform: uppercase;
-    line-height: 1;
-    font-weight: bold;
 
     @media only screen and (max-width: 650px) {
         width: 100%;
