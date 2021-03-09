@@ -15,6 +15,7 @@ export default createGlobalStyle`
         font-family: 'Kanit', sans-serif;
         font-size: 1.6rem;
         color: #fff;
+        background-color: #150f0f;
         box-sizing: border-box;
     }
 
@@ -22,11 +23,21 @@ export default createGlobalStyle`
         text-decoration: none;
     }
 
+    li {
+        list-style: none;
+    }
+
     button {
         border: none;
         outline: none;
         background: transparent;
         cursor: pointer;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-weight: 700;
     }
 `;
 

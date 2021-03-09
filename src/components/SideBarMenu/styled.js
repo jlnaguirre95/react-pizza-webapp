@@ -33,15 +33,16 @@ export const CloseIcon = styled(FaTimes)`
     color: #000;
 `;
 
-export const SidebarContent = styled.div`
+export const SidebarContent = styled.ul`
     margin-bottom: 5vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 80px);
 `;
 
-export const MenuItem = styled.aside`
+export const MenuItem = styled.li`
     font-size: 2rem;
+    color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,8 +62,4 @@ export const SidebarBtn = styled(Button)`
         transition: all 200ms ease-in-out;
         background: #fff;
     }
-`;
-
-export const SidebarRoute = styled.aside`
-    
 `;
