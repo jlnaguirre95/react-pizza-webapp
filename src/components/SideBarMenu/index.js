@@ -1,4 +1,6 @@
 import React from 'react';
+import { useHistory } from 'react-router';
+import { Link } from 'react-scroll';
 
 import {
     SidebarContainer,
@@ -6,21 +8,37 @@ import {
     CloseIcon,
     SidebarContent,
     MenuItem,
-    SidebarBtn
+    SidebarBtn,
 } from './styled';
 
-const SidebarMenu = ({ hideMenu, isOpenMenu }) => {
+const SidebarMenu = ({ orders, hideMenu, isOpenMenu}) => {
+    const history = useHistory();
+
     return (
         <SidebarContainer isOpen={isOpenMenu}>
             <Icon onClick={hideMenu}>
                 <CloseIcon />
             </Icon>
             <SidebarContent>
-                <MenuItem>Pizzas</MenuItem>
-                <MenuItem>Desserts</MenuItem>
-                <MenuItem>Full Menu</MenuItem>
+                <MenuItem>
+                    <Link to="pizzas" smooth={true}>
+                        Pizzas
+                    </Link>
+                </MenuItem>
+                <MenuItem>
+                    <Link to="desserts" smooth={true}>
+                        Desserts
+                    </Link>
+                </MenuItem>
+                <MenuItem>
+                    <Link to="hero" smooth={true}>
+                        Full Menu
+                    </Link>
+                </MenuItem>
             </SidebarContent>
-            <SidebarBtn>Order Now</SidebarBtn>
+            <SidebarBtn onClick={() => history.push('/order')}>
+                Order Now
+            </SidebarBtn>
         </SidebarContainer>
     );
 };

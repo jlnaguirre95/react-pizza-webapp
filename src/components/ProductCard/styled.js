@@ -20,11 +20,6 @@ export const ProductImg = styled.div`
     height: 300px;
     margin-bottom: 3rem;
     box-shadow: 8px 8px #fdc500;
-
-    @media screen and (max-width: 1000px) {
-        width: 250px;
-        height: 250px;
-    }
 `; 
 
 export const ProductInfo = styled.div`
@@ -47,8 +42,13 @@ export const ProductInfo = styled.div`
     }
 
     .product-price {
-        font-size: 2.5rem;
+        font-size: 3rem;
+        font-weight: 700;
         margin-bottom: 2rem;
+
+        small {
+            font-weight: 400;
+        }
     }
 `; 
 

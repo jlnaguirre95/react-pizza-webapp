@@ -17,7 +17,8 @@ export const SidebarContainer = styled.aside`
     transition: all 300ms ease-in-out;  
 
     @media screen and (max-width: 650px) {
-        width: 100%
+        width: 100%;
+        position: absolute;
     } 
 `;
 

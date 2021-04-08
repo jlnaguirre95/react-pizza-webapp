@@ -9,14 +9,17 @@ export default createGlobalStyle`
 
     html {
         font-size: 62.5%;
+        scroll-behavior: smooth;
     }
 
     body {
         font-family: 'Kanit', sans-serif;
         font-size: 1.6rem;
+        font-weight: 400;
         color: #fff;
         background-color: #150f0f;
         box-sizing: border-box;
+        overflow-x: hidden;
     }
 
     a {
@@ -38,6 +41,20 @@ export default createGlobalStyle`
     h2,
     h3 {
         font-weight: 700;
+    }
+`;
+
+export const Logo = styled.div`
+    min-width: 80px;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        transition: 400ms ease-out;
+
+        &:hover {
+            transform: scale(1.2)
+        }
     }
 `;
 

@@ -5,7 +5,7 @@ import logo from '../../assets/SVG/logo-white.svg';
 
 import {
     Nav,
-    Logo,
+    NavLogo,
     NavItem,
     NavIcon
 } from './styled';
@@ -15,9 +15,9 @@ const Navbar = ({ showMenu }) => {
 
     return (
         <Nav>
-            <Logo onClick={() => history.push('/')}>
+            <NavLogo onClick={() => history.push('/')}>
                 <img src={logo} alt="Hot Pizza Delivery" />   
-            </Logo>
+            </NavLogo>
             <NavItem onClick={showMenu}>
                 <span>Menu</span>
                 <NavIcon />
