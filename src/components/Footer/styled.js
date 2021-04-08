@@ -19,7 +19,6 @@ export const FooterLegal = styled.p`
 `;
 
 export const SocialMedia = styled.div`
-    width: 10%;
     display: flex;
     justify-content: space-between;
 `;
@@ -27,6 +26,7 @@ export const SocialMedia = styled.div`
 export const SocialLink = styled(Link)`
     color: #fff;
     font-size: 2.5rem;
+    margin-left: 1rem;
 `;
 
 

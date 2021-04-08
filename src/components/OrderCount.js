@@ -23,6 +23,10 @@ const StyledCount = styled.div`
     align-items: center;
     z-index: 200;
 
+    @media screen and (max-width: 650px) {
+        right: 0;
+    }
+
     .count-icon {
         font-size: 2rem;
     }
