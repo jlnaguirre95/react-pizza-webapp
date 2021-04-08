@@ -1,6 +1,5 @@
 import React from 'react';
 //assets
-import logo from '../../assets/SVG/logo-white.svg';
 import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from 'react-icons/fa';
 //styled
 import {
